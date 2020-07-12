@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Monta Template Engine</title>
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@600&family=Inconsolata&family=Open+Sans:wght@400;600&display=swap">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1>Monta</h1>
+			<p>Template engine for Node</p>
+		</div>
+	</header>
+	<nav>
+		<div class="container">
+			<a href="/" class="active">Overview</a>
+			<a href="/language">Language</a>
+			<a href="/functions">Functions</a>
+		</div>
+	</nav>
+	<main class="container">
+		<h2>Installation</h2>
+
+		<p>Install Monta into your project</p>
+		<code>$ yarn add @montajs/compiler</code>
+
+		<p>Create a file in your project</p>
+		<code>$ touch views/page.mt</code>
+
+		<p>Write a template</p>
+		<code>&lt;p>Hello, { name }&lt;/p></code>
+
+		<p>Create a code file</p>
+		<code>$ touch index.js</code>
+
+		<p>Render the template</p>
+		<code>import { render } from '@montajs/compiler';
+
+let result = await render('page', {
+  name: 'World',
+});</code>
+
+		<p>Head over to the <a href="/language">language</a> page to learn about the Monta syntax.</p>
+	</main>
+
+	<footer>
+		<div class="container">
+			<p><a href="https://github.com/montajs" target="_blank" rel="noreferrer noopener">Monta on Github</a></p>
+			<p>Made by <a href="https://woubuc.be" target="_blank" rel="noreferrer noopener">@woubuc</a></p>
+		</div>
+	</footer>
+</body>
+</html>
