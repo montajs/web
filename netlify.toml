@@ -1,2 +1,7 @@
 [build]
-publish = "src"
+publish = "dist"
+command = "yarn build"
+
+[dev]
+command = "yarn build --watch"
+public = "dist"
