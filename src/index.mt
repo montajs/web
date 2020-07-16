@@ -4,23 +4,20 @@
 	<h2>Installation</h2>
 
 	<p>Install Monta into your project</p>
-	<code>$ yarn add @montajs/compiler</code>
+	{ component('code', code = "$ yarn add @montajs/compiler") }
 
-	<p>Create a file in your project</p>
-	<code>$ touch views/page.mt</code>
-
-	<p>Write a template</p>
-	<code>&lt;p>Hello, { name }&lt;/p></code>
-
-	<p>Create a code file</p>
-	<code>$ touch index.js</code>
+	<p>Create a template</p>
+	{ component('code', code = "&lt;!-- views/page.mt -->
+&lt;p>Hello, { name }&lt;/p>") }
 
 	<p>Render the template</p>
-	<code>import { render } from '@montajs/compiler';
+	{ component('code', code = "// index.js
+import { render } from '@montajs/compiler'
 
 let result = await render('page', {
-name: 'World',
-});</code>
+  name: 'World',
+});
+") }
 
 	<p>Head over to the <a href="/language">language</a> page to learn about the Monta syntax.</p>
 }

@@ -11,6 +11,6 @@
     "simple-netlify": "^0.3.1"
   },
   "dependencies": {
-    "@montajs/cli": "^0.2.2"
+    "@montajs/cli": "^0.2.3"
   }
 }
